@@ -34,7 +34,13 @@ layout:decorate="template1">
                 <td>
                     <a onclick="javascript:return confirm('Etes vous sur de vouloir supprimer')"
                        th:href="@{delete(id=${p.id} , keyword=${keyword})}" class="btn btn-danger">
-                        <i class="bi bi-trash"></i>
+                       Delete
+
+                    </a>
+                </td>
+                <td>
+                    <a th:href="@{editPatients(id=${p.id},keyword=${keyword} , page=${currentPage})}" class="btn btn-success">
+                        Edit
                     </a>
                 </td>
             </tr>
